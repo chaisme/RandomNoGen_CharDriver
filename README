@@ -26,7 +26,7 @@ main.c : Generates random number crypto APIs provided by the kernel. The random 
 main_random.c : This uses kernel's entropy pool for generating random number(/dev/urandom). To know how it generates random numbers or what constitutes its entropy pool, read - https://lwn.net/Articles/283103/
 
 main_murmur.c : This uses random number from entropy as seed value and further manupulates the number using MurmurHash64 algorithm. For the algorithm description-https://en.wikipedia.org/wiki/MurmurHash
-		      http://www.saguiitay.com/2014/10/17/murmurhash-a-fast-hashing-algorithm/
+		 http://www.saguiitay.com/2014/10/17/murmurhash-a-fast-hashing-algorithm/
 
 How to build
  - To build all module :
@@ -42,6 +42,6 @@ How to build
 
 Insert ONLY ONE module at a time in the kernel for non-ominous functioning of the kernel.
 
-
+P.S. Seed from /proc/diskstats for MurmurHash64 coming soon...
 
 ***************~cheers~**********************************************************
